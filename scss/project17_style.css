@@ -1,0 +1,399 @@
+.super-container .container2 .images .image, .super-container .container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.super-container .container2 .images .image .cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.super-container footer.footer, .super-container .container2 .images .image .cover, .super-container .container2 .images .image, .super-container .container2 .images, .super-container .container2, .super-container main.second-container, .super-container .container .nav-bar .nav-items .nav-item, .super-container .container .nav-bar, .super-container .container {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --super-background:rgb(0, 0, 0);
+  --font-color:white;
+  --super-font-family:tahoma;
+}
+
+* {
+  background-color: var(--super-background);
+  color: rgba(211, 211, 211, 0.968);
+  font-family: var(--super-font-family);
+}
+
+body {
+  overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkblue;
+  width: 1px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.super-container .skills-items, .super-container main.second-container, .super-container .container .nav-bar .nav-items, .super-container .container .nav-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.super-container main.second-container div.txt {
+  display: flex;
+  flex-direction: column;
+}
+
+.super-container h3, .super-container .title, .super-container main.second-container div.txt h3, .super-container .container .nav-bar h3 {
+  font-size: 30px;
+  text-shadow: 2px 2px blue;
+}
+.super-container h3 span, .super-container .title span, .super-container main.second-container div.txt h3 span, .super-container .container .nav-bar h3 span {
+  color: blue;
+  text-shadow: 2px 2px white;
+}
+
+.super-container footer.footer, .super-container .container2 .images .image .cover, .super-container .container2 .images .image, .super-container .container2 .images, .super-container .container2, .super-container main.second-container, .super-container .container .nav-bar .nav-items .nav-item, .super-container .container .nav-bar, .super-container .container {
+  margin-right: 0;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+.super-container .container {
+  margin-inline: 3%;
+}
+.super-container .container .nav-bar {
+  justify-content: flex-end;
+  align-items: start;
+  align-content: center;
+}
+.super-container .container .nav-bar h3 {
+  margin-right: auto;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+.super-container .container .nav-bar .nav-items .nav-item {
+  list-style: none;
+  padding-left: 15px;
+}
+.super-container .container .nav-bar .nav-items .nav-item a {
+  text-decoration: none;
+  transition: 0.4s ease-in;
+}
+.super-container .container .nav-bar .nav-items .nav-item a:hover {
+  color: blue;
+}
+.super-container main.second-container {
+  margin-inline: 3%;
+}
+.super-container main.second-container .img {
+  margin-right: 20px;
+}
+.super-container main.second-container .img img {
+  width: 500px;
+  height: 500px;
+  background: repeating-linear-gradient(darkblue, black);
+  border-radius: 50% 50% 50% 0%;
+  filter: opacity(70%);
+  filter: drop-shadow(30%);
+  transition: 0.6s ease-in-out;
+}
+.super-container main.second-container .img img:hover {
+  border-radius: 50% 50% 50% 50%;
+}
+.super-container main.second-container div.txt {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.super-container main.second-container div.txt h3 {
+  font-size: 60px;
+}
+.super-container main.second-container div.txt p {
+  color: rgba(211, 211, 211, 0.968);
+  font-size: 18px;
+  text-align: center;
+  text-indent: 15px;
+  line-height: 34px;
+}
+.super-container main.second-container div.txt button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(8, 0, 255);
+  height: 35px;
+  width: 140px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px blue solid;
+  margin: 2px;
+}
+.super-container main.second-container div.txt button:hover {
+  background-color: black;
+  color: blue;
+  border: 1px blue solid;
+}
+.super-container .title {
+  display: flex;
+  align-items: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: 60px;
+  margin-block: 0%;
+}
+.super-container .skills-items {
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.super-container .skills-items .skills-item i {
+  font-size: 120px;
+  margin: 20px;
+  transition: 0.3s ease-in-out;
+  background-color: rgb(4, 4, 4);
+  padding: 20px;
+  box-shadow: 1px 1px 6px rgb(41, 41, 41);
+}
+.super-container .skills-items .skills-item i:hover {
+  font-size: 110px;
+}
+.super-container p {
+  color: rgba(211, 211, 211, 0.968);
+  font-size: 10px;
+  text-align: center;
+}
+.super-container h3 {
+  font-size: 60px;
+}
+.super-container .container2 .images {
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+.super-container .container2 .images .image {
+  list-style: none;
+}
+.super-container .container2 .images .image:hover .cover {
+  height: 212px;
+  width: 302px;
+}
+.super-container .container2 .images .image:hover .cover h1 {
+  display: flex;
+  text-align: center;
+}
+.super-container .container2 .images .image:hover .cover p {
+  display: inline-block;
+  text-align: center;
+}
+.super-container .container2 .images .image:hover .cover button {
+  display: inline-block;
+  border: 1px solid black;
+  width: 200px;
+  border-radius: 4px;
+}
+.super-container .container2 .images .image img {
+  width: 300px;
+  height: 200px;
+  margin-inline: 7px;
+  margin-block: 7px;
+  border-radius: 4px;
+}
+.super-container .container2 .images .image .cover {
+  align-self: flex-start;
+  justify-self: flex-start;
+  width: 300px;
+  height: 0px;
+  z-index: 10;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  border-radius: 4px;
+  transition: 0.4s ease-out;
+}
+.super-container .container2 .images .image .cover h1 {
+  display: none;
+  background-color: transparent;
+  font-family: tahoma;
+  color: black;
+}
+.super-container .container2 .images .image .cover p {
+  display: none;
+  background-color: transparent;
+  font-family: tahoma;
+  color: rgb(47, 47, 47);
+}
+.super-container .container2 .images .image .cover button {
+  display: none;
+  background-color: transparent;
+  color: black;
+  font-family: tahoma;
+  font-size: 14px;
+  transition: 1s ease-out;
+  width: 0px;
+  height: 30px;
+}
+.super-container .container2 .images .image .cover button:hover {
+  background-color: black;
+  color: white;
+}
+.super-container footer.footer {
+  padding-block: 50px;
+  margin-inline: 0;
+  border-radius: 4px;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  justify-content: space-evenly;
+  align-content: center;
+  margin-top: 20%;
+  box-shadow: 1px 1px 4px rgb(27, 27, 27), -1px -1px 4px rgb(27, 27, 27);
+  border-inline: 0px solid black;
+  outline-color: black;
+}
+.super-container footer.footer .block1 {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+}
+.super-container footer.footer .block1 h6 {
+  background-color: rgb(0, 0, 0);
+  font-weight: 3;
+  padding-top: auto;
+  color: rgba(211, 211, 211, 0.968);
+  font-size: 10px;
+}
+.super-container footer.footer .block1 .social-items {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.super-container footer.footer .block1 .social-items .social-item {
+  background-color: rgb(0, 0, 0);
+  margin: 4px;
+  font-size: 20px;
+}
+.super-container footer.footer .block1 .social-items .social-item a {
+  transition: 0.3s ease-out;
+  background-color: rgb(0, 0, 0);
+}
+.super-container footer.footer .block1 .social-items .social-item a i {
+  transition: 0.3s ease-out;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+.super-container footer.footer .block1 .social-items .social-item a i:hover {
+  color: darkblue;
+}
+.super-container footer.footer .block1 .social-items .social-item a:hover {
+  color: darkblue;
+}
+.super-container footer.footer .block2 {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+}
+.super-container footer.footer .block2 .contact-item {
+  background-color: rgb(0, 0, 0);
+}
+.super-container footer.footer .block2 .contact-item a {
+  transition: 0.3s ease-out;
+  font-size: 12px;
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+}
+.super-container footer.footer .block2 .contact-item a:hover {
+  color: darkblue;
+}
+.super-container footer.footer .block3 {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+}
+.super-container footer.footer .block3 .more-item {
+  background-color: rgb(0, 0, 0);
+}
+.super-container footer.footer .block3 .more-item a {
+  transition: 0.3s ease-out;
+  font-size: 12px;
+  text-decoration: none;
+  background-color: rgb(0, 0, 0);
+}
+.super-container footer.footer .block3 .more-item a:hover {
+  color: darkblue;
+}
+.super-container footer.footer .block4 {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+}
+.super-container footer.footer .block4 .about-item {
+  background-color: rgb(0, 0, 0);
+}
+.super-container footer.footer .block4 .about-item a {
+  transition: 0.3s ease-out;
+  background-color: rgb(0, 0, 0);
+  font-size: 12px;
+  text-decoration: none;
+}
+.super-container footer.footer .block4 .about-item a:hover {
+  color: darkblue;
+}
+.super-container footer.footer .last-compo input[type=text] {
+  width: 160px;
+  border: 0px solid rgb(0, 0, 0);
+  border: 1px solid rgb(33, 33, 33);
+  font-size: 14px;
+  box-shadow: 1px 1px 1px rgb(33, 33, 33);
+  margin-top: 6vh;
+  border-radius: 2px;
+}
+.super-container footer.footer .last-compo input[type=button] {
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 12, 140);
+  border: 0px solid gray;
+  border-radius: 2px;
+}
+
+@media (max-width: 977px) {
+  main.second-container {
+    display: flex;
+    flex-direction: column;
+  }
+  main.second-container .img {
+    display: flex;
+    flex-direction: column;
+  }
+  main.second-container .img img {
+    display: none;
+    flex-direction: column;
+    width: 20px;
+    height: 20px;
+    background: repeating-linear-gradient(darkblue, black);
+    filter: opacity(70%);
+  }
+}/*# sourceMappingURL=project17_style.css.map */
