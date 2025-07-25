@@ -20,9 +20,10 @@
 }
 
 :root {
-  --super-background:rgb(0, 0, 0);
-  --font-color:white;
-  --super-font-family:tahoma;
+  /*--super-background:rgb(0, 0, 0);*/
+  --super-background:black;
+  --font-color:rgb(214, 214, 214);
+  --super-font-family: 'Share Tech Mono', monospace;
 }
 
 * {
@@ -33,6 +34,9 @@
 
 body {
   overflow-y: scroll;
+}
+html{
+ scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar {
@@ -54,6 +58,8 @@ body::-webkit-scrollbar-thumb {
 .super-container main.second-container div.txt {
   display: flex;
   flex-direction: column;
+
+
 }
 
 .super-container h3, .super-container .title, .super-container main.second-container div.txt h3, .super-container .container .nav-bar h3 {
@@ -108,8 +114,13 @@ body::-webkit-scrollbar-thumb {
 .super-container main.second-container .img img {
   width: 500px;
   height: 500px;
-  background: repeating-linear-gradient(darkblue, black);
-  border-radius: 50% 50% 50% 0%;
+/*  background: repeating-linear-gradient(darkblue, black);*/
+background-color: rgb(214, 214, 214);
+ /* border-radius: 50% 50% 50% 0%;*/
+border-radius: 82px 74px 93px 93px;
+-webkit-border-radius: 82px 74px 93px 93px;
+-moz-border-radius: 82px 74px 93px 93px;
+border: 8px solid #f2f2f2;
   filter: opacity(70%);
   filter: drop-shadow(30%);
   transition: 0.6s ease-in-out;
@@ -169,6 +180,7 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(4, 4, 4);
   padding: 20px;
   box-shadow: 1px 1px 6px rgb(41, 41, 41);
+  border-radius: 10px;
 }
 .super-container .skills-items .skills-item i:hover {
   font-size: 110px;
@@ -200,6 +212,7 @@ body::-webkit-scrollbar-thumb {
 .super-container .container2 .images .image:hover .cover h1 {
   display: flex;
   text-align: center;
+  color:rgb(0, 0, 0);
 }
 .super-container .container2 .images .image:hover .cover p {
   display: inline-block;
@@ -235,7 +248,8 @@ body::-webkit-scrollbar-thumb {
   display: none;
   background-color: transparent;
   font-family: tahoma;
-  color: black;
+ /* color: black;*/
+ color : transparent;
 }
 .super-container .container2 .images .image .cover p {
   display: none;
@@ -254,8 +268,8 @@ body::-webkit-scrollbar-thumb {
   height: 30px;
 }
 .super-container .container2 .images .image .cover button:hover {
-  background-color: black;
-  color: white;
+  background-color: rgba(88, 88, 88, 0.306);
+ /* color: white;*/
 }
 .super-container footer.footer {
   padding-block: 50px;
@@ -304,7 +318,7 @@ body::-webkit-scrollbar-thumb {
 .super-container footer.footer .block1 .social-items .social-item a i {
   transition: 0.3s ease-out;
   background-color: rgb(0, 0, 0);
-  color: white;
+  color:var(--font-color);
 }
 .super-container footer.footer .block1 .social-items .social-item a i:hover {
   color: darkblue;
@@ -380,6 +394,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 977px) {
+  .super-container .skills-items .skills-item {
+font-size: 200px;
+}
+  main.second-container .buttons #contact_me{
+    align-self: center;
+    margin-inline-start: 20%;
+  }
+
+  main.second-container .buttons #more{
+       visibility: hidden;
+
+  }
   main.second-container {
     display: flex;
     flex-direction: column;
@@ -396,4 +422,8 @@ body::-webkit-scrollbar-thumb {
     background: repeating-linear-gradient(darkblue, black);
     filter: opacity(70%);
   }
+  main.second-container div h3 {
+    text-align: center;
+  }
+
 }/*# sourceMappingURL=project17_style.css.map */
