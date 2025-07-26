@@ -21,18 +21,23 @@
 
 :root {
   /*--super-background:rgb(0, 0, 0);*/
-  --super-background:black;
+  --super-background:rgb(4, 12, 8) ;
+  --super-background-image:linear-gradient(315deg, #003153 0%, #1B1B1B 74%);
+
   --font-color:rgb(214, 214, 214);
   --super-font-family: 'Share Tech Mono', monospace;
 }
 
 * {
-  background-color: var(--super-background);
+  /*background-color: var(--super-background);*/
+
   color: rgba(211, 211, 211, 0.968);
   font-family: var(--super-font-family);
 }
 
-body {
+body { 
+  background-color: var(--super-background);
+ 
   overflow-y: scroll;
 }
 html{
@@ -44,7 +49,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: darkblue;
+  background-color: green;
   width: 1px;
   height: 40px;
   border-radius: 10px;
@@ -64,10 +69,10 @@ body::-webkit-scrollbar-thumb {
 
 .super-container h3, .super-container .title, .super-container main.second-container div.txt h3, .super-container .container .nav-bar h3 {
   font-size: 30px;
-  text-shadow: 2px 2px blue;
+  text-shadow: 2px 2px green;
 }
 .super-container h3 span, .super-container .title span, .super-container main.second-container div.txt h3 span, .super-container .container .nav-bar h3 span {
-  color: blue;
+  color: green;
   text-shadow: 2px 2px white;
 }
 
@@ -103,7 +108,7 @@ body::-webkit-scrollbar-thumb {
   transition: 0.4s ease-in;
 }
 .super-container .container .nav-bar .nav-items .nav-item a:hover {
-  color: blue;
+  color: green;
 }
 .super-container main.second-container {
   margin-inline: 3%;
@@ -145,18 +150,18 @@ border: 8px solid #f2f2f2;
 }
 .super-container main.second-container div.txt button {
   background-color: rgb(0, 0, 0);
-  color: rgb(8, 0, 255);
+  color: green;
   height: 35px;
   width: 140px;
   font-size: 16px;
   border-radius: 4px;
-  border: 1px blue solid;
+  border: 1px green solid;
   margin: 2px;
 }
 .super-container main.second-container div.txt button:hover {
   background-color: black;
-  color: blue;
-  border: 1px blue solid;
+  color: green;
+  border: 1px green solid;
 }
 .super-container .title {
   display: flex;
@@ -276,7 +281,7 @@ border: 8px solid #f2f2f2;
   margin-inline: 0;
   border-radius: 4px;
   left: 0;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -289,93 +294,93 @@ border: 8px solid #f2f2f2;
   outline-color: black;
 }
 .super-container footer.footer .block1 {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
   display: flex;
   flex-direction: column;
 }
 .super-container footer.footer .block1 h6 {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
   font-weight: 3;
   padding-top: auto;
   color: rgba(211, 211, 211, 0.968);
   font-size: 10px;
 }
 .super-container footer.footer .block1 .social-items {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
   display: flex;
   flex-direction: row;
   list-style: none;
 }
 .super-container footer.footer .block1 .social-items .social-item {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
   margin: 4px;
   font-size: 20px;
 }
 .super-container footer.footer .block1 .social-items .social-item a {
   transition: 0.3s ease-out;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
 }
 .super-container footer.footer .block1 .social-items .social-item a i {
   transition: 0.3s ease-out;
-  background-color: rgb(0, 0, 0);
+  background-color:var(--super-background);
   color:var(--font-color);
 }
 .super-container footer.footer .block1 .social-items .social-item a i:hover {
-  color: darkblue;
+  color: green;
 }
 .super-container footer.footer .block1 .social-items .social-item a:hover {
-  color: darkblue;
+  color: darkgreen;
 }
 .super-container footer.footer .block2 {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
   display: flex;
   flex-direction: column;
 }
 .super-container footer.footer .block2 .contact-item {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
 }
 .super-container footer.footer .block2 .contact-item a {
   transition: 0.3s ease-out;
   font-size: 12px;
   text-decoration: none;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
 }
 .super-container footer.footer .block2 .contact-item a:hover {
-  color: darkblue;
+  color: darkgreen;
 }
 .super-container footer.footer .block3 {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
   display: flex;
   flex-direction: column;
 }
 .super-container footer.footer .block3 .more-item {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
 }
 .super-container footer.footer .block3 .more-item a {
   transition: 0.3s ease-out;
   font-size: 12px;
   text-decoration: none;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
 }
 .super-container footer.footer .block3 .more-item a:hover {
-  color: darkblue;
+  color: darkgreen;
 }
 .super-container footer.footer .block4 {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
   display: flex;
   flex-direction: column;
 }
 .super-container footer.footer .block4 .about-item {
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
 }
 .super-container footer.footer .block4 .about-item a {
   transition: 0.3s ease-out;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--super-background);
   font-size: 12px;
   text-decoration: none;
 }
 .super-container footer.footer .block4 .about-item a:hover {
-  color: darkblue;
+  color: darkgreen;
 }
 .super-container footer.footer .last-compo input[type=text] {
   width: 160px;
@@ -387,8 +392,8 @@ border: 8px solid #f2f2f2;
   border-radius: 2px;
 }
 .super-container footer.footer .last-compo input[type=button] {
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 12, 140);
+  background-color: var(--super-background);
+  color: rgb(0, 66, 14);
   border: 0px solid gray;
   border-radius: 2px;
 }
@@ -419,7 +424,7 @@ font-size: 200px;
     flex-direction: column;
     width: 20px;
     height: 20px;
-    background: repeating-linear-gradient(darkblue, black);
+    background: repeating-linear-gradient(darkgreen, black);
     filter: opacity(70%);
   }
   main.second-container div h3 {
