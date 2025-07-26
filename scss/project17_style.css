@@ -23,7 +23,7 @@
   /*--super-background:rgb(0, 0, 0);*/
   --super-background:rgb(4, 12, 8) ;
   --super-background-image:linear-gradient(315deg, #003153 0%, #1B1B1B 74%);
-
+  --phone-text-size:21px;
   --font-color:rgb(214, 214, 214);
   --super-font-family: 'Share Tech Mono', monospace;
 }
@@ -38,7 +38,8 @@
 body { 
   background-color: var(--super-background);
  
-  overflow-y: scroll;
+  overflow-y: scrollss;
+
 }
 html{
  scroll-behavior: smooth;
@@ -399,6 +400,15 @@ border: 8px solid #f2f2f2;
 }
 
 @media (max-width: 977px) {
+  .super-container footer.footer {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  }
+    .super-container footer.footer>div {
+ margin-block: 20px;
+  }
+
   .super-container .skills-items .skills-item {
 font-size: 200px;
 }
@@ -430,5 +440,7 @@ font-size: 200px;
   main.second-container div h3 {
     text-align: center;
   }
-
+  .super-container .container .nav-bar h3{
+    font-size:var(--phone-text-size) ;
+    padding-top: 10px;  }
 }/*# sourceMappingURL=project17_style.css.map */
