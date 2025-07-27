@@ -26,6 +26,8 @@
   --phone-text-size:21px;
   --font-color:rgb(214, 214, 214);
   --super-font-family: 'Share Tech Mono', monospace;
+  --border-radius-size :10px;
+  --global-color:darkgreen;
 }
 
 * {
@@ -399,7 +401,39 @@ border: 8px solid #f2f2f2;
   border-radius: 2px;
 }
 
+
+.super-container .container3 ul li{
+  color: var(--font-color);
+  list-style: none;
+  text-align: center;
+  background: linear-gradient(20deg,rgba(0, 100, 0, 0.116),var(--super-background));
+  border-radius: var(--border-radius-size);
+  padding-block: 5px;
+  margin-block:10px;
+  align-self: center;
+  width: 80%; 
+  transition:0.4s ease-out;
+  padding-inline:10px;
+
+}
+.super-container .container3 ul li:hover{
+ background: linear-gradient(20deg,rgba(0, 100, 0, 0.208),var(--super-background));
+ transition:0.4s ease-out;
+}
+
+.super-container .container3 ul{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-content: center;
+}
+
+
+
 @media (max-width: 977px) {
+  .super-container .title{
+    text-align: center;
+  }
   .super-container footer.footer {
   flex-direction: column;
   align-items: center;
